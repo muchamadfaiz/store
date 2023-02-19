@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     #third-party
 
     #register-apps
-    
+    'apps.store'
 ]
 
 MIDDLEWARE = [
