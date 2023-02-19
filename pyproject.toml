@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "storefront"
+version = "0.1.0"
+description = "marketplace"
+authors = ["Muchamad Faiz <109614025+muchamadfaiz@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+djangorestframework = "^3.14.0"
+Django = "^4.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
