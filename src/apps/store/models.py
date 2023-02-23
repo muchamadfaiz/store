@@ -19,6 +19,10 @@ class Customer(models.Model):
     birth_date = models.DateTimeField(null=True)
     membership = models.CharField(max_length=1, choices=MEMBERSHIP_CHOICES, default= MEMBERSHIP_BRONZE)
 
+class Promotion(models.Model):
+    description = models.CharField(max_length=255)
+    discount = models.FloatField()
+
 class Collection (models.Model):
     title = models.CharField(max_length=255)
 
@@ -29,6 +33,7 @@ class Product(models.Model):
     inventory = models.IntegerField
     last_update = models.DateTimeField()
     collection = models.ForeignKey(Collection, on_delete=models.PROTECT)
+    promotions = models.ManyToManyField(Promotion)
 
 class Order (models.Model):
 
