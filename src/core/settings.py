@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     #register-apps
     'apps.store',
     'apps.tags',
+    'apps.likes',
 ]
 
 MIDDLEWARE = [
